@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function clearAllTasks() {
         todoList.innerHTML = "";
     }
-    
+
     addTaskBtn.addEventListener("click", addTask);
     taskInput.addEventListener("keypress", (e) => {
         if (e.key === "Enter") addTask();

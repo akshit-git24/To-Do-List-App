@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List Vibes</title>
     <style>
-        /* Keep the vibe fresh with a gradient background */
+        
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -16,7 +16,7 @@
             overflow: auto;
         }
 
-        /* Navbar to keep things navigable */
+       
         .navbar {
             background: linear-gradient(to right, #ff6b6b, #ff8e53);
             padding: 15px 20px;
@@ -49,7 +49,7 @@
             transform: scale(1.1);
         }
 
-        /* Main container, adjusted for navbar */
+        
         .todo-container {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
@@ -62,7 +62,7 @@
             overflow: hidden;
         }
 
-        /* Header for the app title */
+        
         .todo-header {
             text-align: center;
             margin-bottom: 30px;
@@ -117,7 +117,7 @@
             box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
         }
 
-        /* Task list styling */
+       
         .todo-list {
             display: flex;
             flex-direction: column;
@@ -170,7 +170,7 @@
             background: #c0392b;
         }
 
-        /* Clear all button */
+       
         .clear-btn {
             background: linear-gradient(to right, #636e72, #2d3436);
             color: white;
@@ -190,7 +190,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        /* Footer for that final touch */
+       
         .footer {
             background: linear-gradient(to right, #2c3e50, #34495e);
             color: white;
@@ -217,7 +217,7 @@
             color: #4ecdc4;
         }
 
-        /* Responsive tweaks */
+        
         @media (max-width: 600px) {
             .todo-container {
                 padding: 20px;
@@ -255,7 +255,6 @@
             }
         }
 
-        /* Sparkle effect for the container */
         .todo-container::before {
             content: '';
             position: absolute;
@@ -269,7 +268,7 @@
     </style>
 </head>
 <body>
-    <!-- Navbar for navigation -->
+   
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -291,21 +290,7 @@
         </div>
        
         <div class="todo-list">
-            <div class="todo-item">
-                <input type="checkbox" id="task1">
-                <label for="task1">Finish that cool project</label>
-                <button class="delete-btn">Delete</button>
-            </div>
-            <div class="todo-item completed">
-                <input type="checkbox" id="task2" checked>
-                <label for="task2">Grab some coffee</label>
-                <button class="delete-btn">Delete</button>
-            </div>
-            <div class="todo-item">
-                <input type="checkbox" id="task3">
-                <label for="task3">Vibe with some music</label>
-                <button class="delete-btn">Delete</button>
-            </div>
+            
         </div>
         
         <button class="clear-btn" id="clear-all">Clear All</button>
@@ -313,7 +298,7 @@
 
     <script src="tasks.js"></script>
     <footer class="footer">
-        <p>&copy; 2025 To-Do List Vibes. Made with love.</p>
+        <p>&copy; 2025 To-Do List app. Made with love.</p>
     </footer>
 </body>
 </html>
