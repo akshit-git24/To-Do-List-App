@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Vibes - Home</title>
+    <style>
+        /* Keeping the same vibrant background vibe */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            overflow: auto;
+        }
+
+        /* Navbar to match the to-do app */
+        .navbar {
+            background: linear-gradient(to right, #ff6b6b, #ff8e53);
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #2c3e50;
+            transform: scale(1.1);
+        }
+
+        /* Main content area for the homepage */
+        .home-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 90%;
+            max-width: 700px;
+            margin: 120px auto 60px; /* Space for navbar and footer */
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Big, bold headline */
+        .home-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Description to set the vibe */
+        .home-description {
+            font-size: 1.3rem;
+            color: #34495e;
+            margin: 0 0 30px;
+            line-height: 1.6;
+        }
+
+        /* Call-to-action button */
+        .cta-btn {
+            background: linear-gradient(to right, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Footer to keep it consistent */
+        .footer {
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #4ecdc4;
+        }
+
+        /* Responsive tweaks for smaller screens */
+        @media (max-width: 600px) {
+            .home-container {
+                padding: 20px;
+                margin: 100px auto 40px;
+            }
+
+            .home-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .home-description {
+                font-size: 1.1rem;
+            }
+
+            .cta-btn {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+
+            .navbar ul {
+                gap: 15px;
+            }
+
+            .navbar a {
+                font-size: 1rem;
+            }
+
+            .footer {
+                font-size: 0.8rem;
+                padding: 10px;
+            }
+        }
+
+        /* Sparkle effect to keep the magic */
+        .home-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar matching the to-do app -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="task_page.html">Tasks</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main homepage content -->
+    <div class="home-container">
+        <div class="home-header">
+            <h1>Welcome to To-Do List Vibes</h1>
+        </div>
+        <div class="home-description">
+            Get ready to organize your life with a splash of color and a whole lot of fun! Create, track, and conquer your tasks like a pro.
+        </div>
+        <a href="task_page.html" class="cta-btn">Start Tasking Now</a>
+    </div>
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 To-Do List . Made with <a href="#love">love</a>.</p>
+    </footer>
+</body>
+</html>
